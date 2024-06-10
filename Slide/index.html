@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projet JS: Publicitaire</title>
+
+    <!-- Offline library -->
+    <script src="../Lib/JQuery.js"></script>
+    
+    <link rel="stylesheet" href="../Lib/jquery-ui/jquery-ui.min.css">
+    <script src="../Lib/jquery-ui/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="../Lib/bootstrap/css/bootstrap.min.css">
+    <script src="../Lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- style and script -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="widget.js" defer></script>
+    <script src="event.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">Projet Javascript</a>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navigation">
+                    <ul class="navbar-nav mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Circuit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Équation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Publicitaire</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+
+        <div class="alert alert-danger alert-dismissible" id="danger" role="alert">
+            <span class="me-4">Invalid delay value!</span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="card mx-auto mt-2" id="slideCard">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span class="fw-bold">Panneau publicitaire</span>
+                <img class="btn btn-sm" src="Res/settings.svg" alt="" id="setupButton">
+            </div>
+
+            <div class="card-boddy" id="mainContainer">
+                <div class="d-flex" id="imgContainer">
+                    <!-- IMAGE GENERATED HERE -->
+                </div>
+                <span class="rounded bg-dark text-white" id="index">1</span>
+            </div>
+
+            <div class="card-footer d-flex justify-content-between">
+                <button class="ui-button" id="previousBtn" type="button">
+                    <img src="Res/chevron-left.svg" alt="">
+                </button>
+                <button class="ui-button" id="startBtn" type="button">
+                    <img src="Res/play.svg" alt="">
+                </button>
+                <button class="ui-button" id="pauseBtn" type="button">
+                    <img src="Res/pause.svg" alt="">
+                </button>
+                <button class="ui-button" id="nextBtn" type="button">
+                    <img src="Res/chevron-right.svg" alt="">
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="template" style="display: none;">
+        <img src="" alt="">
+
+        <div class="dialog" id="setupDialog">
+            <div class="row mt-1">
+                <label class="col-4" for="waitDelay">Attente:</label>
+                <span class="col-8 spinner"><input id="waitDelaySpinner"></input></span>
+            </div>
+            <div class="row mt-1">
+                <label class="col-4" for="slideDelay">Mouvement:</label>
+                <span class="col-8 spinner"><input id="slideDelaySpinner"></input></span>
+            </div>
+            <div class="role mt-1">
+                <label class="col-8" for="">Sans delay d'attente</label>
+                <input class="" type="checkbox">
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+
+</footer>
+
+</html>

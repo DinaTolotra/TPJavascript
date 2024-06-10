@@ -1,0 +1,47 @@
+#slideCard {
+    width: 300px;
+}
+
+.row {
+    align-items: center;
+}
+
+.spinner {
+    transform: scale(.8);
+}
+
+input:focus {
+    outline: none;
+}
+
+#danger {
+    display: none;
+    position: fixed;
+    z-index: 3;
+}
+
+.image {
+    width: 300px;
+}
+
+#mainContainer {
+    overflow: hidden;
+}
+
+#imgContainer {
+    position: relative;
+    left: -300px;
+}
+
+#index {
+    position: absolute;
+    left: 136px; top: 230px;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+}
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}

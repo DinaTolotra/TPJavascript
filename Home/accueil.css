@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+h2{
+    text-align: center;
+    padding: 25px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: cursive;
+     
+}
+
+.tout{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-top: 20px;
+    height: 450px;
+}
+
+.img{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.img:hover{
+    transform: scale(1.05);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.btn{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+    background-color: black;
+    color: white; 
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.btn {
+    text-decoration: none;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+}
+
+.btn:hover{
+    background-color: gray;
+    transition: 0.5s;
+    height: 50px;
+    border-color: gray;
+}
+
+footer{
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+}
+
+footer.membre{
+    display: flex;
+    margin: auto;
+}
+
+.membre .membre-presentation{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    color: white;
+    font-size: 15px;   
+}
+
+.s{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.s span{
+    font-weight: bold;
+}
+
+
+
