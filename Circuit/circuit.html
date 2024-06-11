@@ -4,15 +4,54 @@
     <meta charset="UTF-8">
     <title>Circuit</title>
 
-    <link rel="stylesheet" href="style.css">
 
-    <script src="../Ressource/lib/JQuery.js"></script>
+    <!-- offline library -->
+    <script src="../Lib/JQuery.js"></script>
+
+    <script src="../Lib/jquery-ui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="../Lib/jquery-ui/jquery-ui.min.css">
+
+    <link rel="stylesheet" href="../Lib/bootstrap/css/bootstrap.min.css">
+    <script src="../Lib/bootstrap/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
     <script src="calcul.js"></script>
     <script src="event.js"></script>
     <script src="content.js"></script>
     <script src="engine.js"></script>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">Projet Javascript</a>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navigation" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navigation">
+                    <ul class="navbar-nav mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Home/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../Circuit/circuit.html">Circuit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Equation/equation.html">Équation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Slide/index.html">Publicitaire</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
 
     <main>
         <div id="bg">
@@ -29,8 +68,8 @@
             </div>
         </div>
 
-        <div id="circuit_cont">
-                <canvas id="main"></canvas>
+        <div class="card" id="circuit_cont">
+            <canvas id="main"></canvas>
             <div id="comp_cont"> 
                 <canvas class="comp" id="E"></canvas>
                 <canvas class="comp R" id="R1"></canvas>
@@ -38,16 +77,23 @@
                 <canvas class="comp R" id="R3"></canvas>
                 <canvas class="comp R" id="R4"></canvas>
             </div>
+            <div class="card-footer text-center">
+                Circuit
+            </div>
         </div>
         
-        <div id="data_container">
-            <table id="input_list"></table>
-            <div></div>
-            <table id="output_list"></table>
-            <button type="button" hidden>Calculer</button>
+        <div class="card" id="data_container">
+            <div class="card-body d-flex justify-content-around">
+                <table id="input_list"></table>
+                <div></div>
+                <table id="output_list"></table>
+                <button type="button" hidden>Calculer</button>
+            </div>
+            <div class="card-footer text-center">
+                Entrée/Sortie
+            </div>
         </div>
     </main>
-
 
 </body>
 </html>

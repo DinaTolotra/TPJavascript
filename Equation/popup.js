@@ -7,24 +7,16 @@ $(".dialog#input").dialog({
             text: "Ok",
             click: function() {
                 let val = $(this).find("input").val();
-                $(`#${target}`).find(".value").html(val);
-                switch (target) {
-                    case "a":
-                        a = val;
-                        break;
-                    case "b":
-                        b = val;
-                        break;
-                    case "c":
-                        c = val;
-                        break;
-                }
+                if (isInputValid(val))
+                    setValue(val);
                 $(this).dialog("close");
             }
         }
     ],
     open: function() {
         let label = $(this).find("label");
+        let input = $(this).find("input");
         label.html(target);
+        input.val("");
     }
 });
