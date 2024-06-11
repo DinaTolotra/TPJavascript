@@ -1,0 +1,29 @@
+#equation:hover {
+    color: gray;
+    cursor: default;
+}
+
+.coeff {
+    border-bottom: 1px dashed black;
+}
+
+.coeff:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#template {
+    display: none;
+}
+
+.unset {
+    background: #ffca2ca0;
+}
+
+.valid {
+    background: #157347a0;
+}
+
+.invalid {
+    background: #dc3545a0;
+}

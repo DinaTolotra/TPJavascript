@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Equation</title>
+    
+    <!-- Library -->
+    <link rel="stylesheet" href="../Lib/bootstrap/css/bootstrap.min.css">
+    <script src="../Lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="../Lib/JQuery.js"></script>
+    
+    <link rel="stylesheet" href="../Lib/jquery-ui/jquery-ui.min.css">
+    <script src="../Lib/jquery-ui/jquery-ui.min.js"></script>
+    
+
+    <!-- script & style -->
+    <script src="script.js" defer></script>
+    <script src="popup.js" defer></script>
+    <script src="calcul.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">Projet Javascript</a>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navigation" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navigation">
+                    <ul class="navbar-nav mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Home/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Circuit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Équation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Slide/index.html">Publicitaire</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="container pt-5">
+        <div class="fs-3 fw-bold typing mb-lg-5">
+            Projet Javascript: Equation second dégrée
+        </div>
+
+        <div class="col d-flex">
+            
+            <div class="row col-4 card">
+                <div class="card-header">
+                    Equation:
+                </div>
+                <div class="card-body text-center fs-3 fw-bold" id="equation">
+                    <span class="coeff" id="a">a</span>x<sup>2</sup>
+                    <span class="sign">+</span><span class="coeff" id="b">b</span>x
+                    <span class="sign">+</span><span class="coeff" id="c">c</span>
+                </div>
+                <div class="row card-body">
+                    <div class="col-8"></div>
+                    <button class="col-4 btn btn-outline-secondary" id="calc">
+                        Calculer
+                    </button>
+                </div>
+            </div>
+            
+            <div class="row col-8 card">
+                <div class="card-header">
+                    Resulat:
+                </div>
+                <div class="card-body text-center fs-5 fw-bold p-5" id="result">
+                    <div class="row" id="delta">
+                        <div class="col-2" id="label">
+                            &Delta;
+                        </div>
+                        <div class="col-2" id="value"></div>
+                        <div class="col-8" id="remark">
+                            
+                        </div>
+                    </div>
+                    <div class="row" id="x1">
+                        <div class="col-2" id="label">
+                            X'
+                        </div>
+                        <div class="col-2" id="value"></div>
+                        <div class="col-8" id="remark">
+                            
+                        </div>
+                    </div>
+                    <div class="row" id="">
+                        <div class="col-2" id="label">
+                            X''
+                        </div>
+                        <div class="col-2" id="value"></div>
+                        <div class="col-8" id="remark">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="template">
+        <div class="dialog" id="input">
+            <div class="input-group d-flex align-content-center">
+                <label class="form-label px-3" for="value">label</label>
+                <input class="form-control" type="number" id="value">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
