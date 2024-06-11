@@ -1,0 +1,123 @@
+main {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#bg {
+    z-index: 99;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup {
+    color: aliceblue;
+    position: absolute;
+    /* top: -204px; left: -504px; */
+    width: 300px;
+    height: 150px;
+    border: 2px double;
+    border-radius: 10px;
+    background-color: rgb(37, 37, 37);
+}
+
+.popup #title {
+    font-size: larger;
+    font-weight: bolder;
+    margin: 5px 20px;
+}
+
+.popup #input_group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    height: 70px;
+}
+
+.popup input {
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.popup input:focus {
+    outline: none;
+    border-color: cadetblue;
+}
+
+.popup #button_group {
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}
+
+#circuit_cont {
+    position: relative;
+}
+
+#comp_cont {
+    position: absolute;
+    top: 0; left: 0;
+}
+
+canvas.comp {
+    background: white;
+    position: absolute;
+    top: 0; left: 0;
+    cursor: pointer;
+}
+
+canvas.comp:hover {
+    transform: scale(1.05);
+}
+
+#data_container {
+    width: 420px;
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.label {
+    width: 32px;
+    font-size: larger;
+}
+
+.value {
+    width: 24px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+
+#input_list *.value {
+    cursor: pointer;
+}
+
+#input_list tr.incomplet *.state {
+    color: red;
+}
+
+#input_list tr.complet *.state {
+    color: green;
+}
+
+button {
+    width: 100px;
+    height: 32px;
+    align-self: flex-end;
+}
+
+tr:nth-child(2n-1) {
+    background-color: rgba(128, 128, 128, 0.4);
+}

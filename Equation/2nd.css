@@ -1,0 +1,143 @@
+body{
+    background-color: #99b3ff;
+    background-repeat: round;
+    background-size: cover;
+}
+.izy_rehetra{
+    display: flex;
+}
+.haha{
+    border: solid 2px black;
+    position: absolute;
+    margin-left: 5%;
+    background-color:  #99b3ff;
+
+}
+#refresh{
+    margin-top: 18%;
+    position: absolute;
+    top: -5%;
+    right: 16%;
+    width: 50px;
+    height: 50px;
+    color: red;
+    backdrop-filter: blur(20px);
+    display: none;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+
+
+}
+#refresh.refreshMasquer{
+    display: block;
+    transform: scale(1);
+}
+#refresh:hover{
+    border: solid red 2px;
+    width: 60px;
+    height: 60px;
+    background-color: red;
+}
+#delta_inferieur0{
+    padding-bottom: 10%;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    backdrop-filter: blur(3px);
+    box-shadow: black 10px 10px 10px 10px;
+    display: none;
+    width: 80%;
+    height: 70%;
+    top: 10%;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+    margin-top: 10%;
+
+
+    
+    
+}
+#delta_inferieur0.masquer2{
+    display: block;
+    transform: scale(1);
+}
+#delta_egal0{
+    padding-bottom: 10%;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: none;
+    backdrop-filter: blur(3px);
+    width: 80%;
+    height: 70%;
+    top: 10%;
+    box-shadow: black 10px 10px 10px 10px;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+    margin-top: 10%;
+
+
+    
+
+}
+#delta_egal0.masquer3{
+    display: block;
+    transform: scale(1);
+}
+
+#delta_sup0{
+    padding-bottom: 10%;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 80%;
+    height: 70%;
+    top: 10%;
+    display: block;
+    box-shadow: black 10px 10px 10px 10px;
+    margin-top: 10%;
+    backdrop-filter: blur(3px);
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+    
+    
+   
+
+}
+#delta_sup0.masquer{
+    display: block;
+    transform: scale(1);
+}
+#resultat{
+    
+    margin-left: 70px;
+    text-decoration: underline;
+    font-size: 20px;
+    color: black;
+}
+h2,h4{
+    margin-left: 10%;
+    color: black;
+}
+h4{
+     margin-top: 3%;
+}
+.izy_rehetra{
+    font-size: 30px;
+    color: black;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.hahaha{
+    border: solid black 2px;
+    padding-bottom: 80%;
+    padding-top: 5%;
+    
+}
+.contenue{
+    font-size: 40px;
+    justify-content: center;
+    margin-left: 50px;
+    color: black;
+}

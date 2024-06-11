@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Equation</title>
+    
+    <!-- Library -->
+    <script src="JQuery.js"></script>
+    
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script src="jquery-ui.min.js"></script>
+    
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+
+    <!-- script & style -->
+    <script src="2nd.js" defer></script>
+    <link rel="stylesheet" href="2nd.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">Projet Javascript</a>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navigation" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navigation">
+                    <ul class="navbar-nav mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Home/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Circuit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Équation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Slide/index.html">Publicitaire</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="izy_manotolo">
+        
+        <div class="hahaha">
+            <h2>PROJET NUMERO 1: RESOLUTION DE L'EQUATION 2nd DEGRE</h2>
+            <h4>veuillez remplacer a, b et c par ses valeur <br>puis appuyer sur resultat pour voir la solution.</h4>
+            <div class="izy_rehetra">
+                <p id="a" onclick="getvala()">a</p>
+                <p class="const" id="x1">x<sup id="carre">2</sup></p>
+
+                <p class="signe" id="signe1">+</p>
+                <p id="b" onclick="getvalb()">b</p>
+                <p class="const" id="x2">x</p>
+                <p class="signe" id="signe2">+</p>
+                <p id="c" onclick="getvalc()">c</p>
+                <p>=0</p>
+
+            </div>
+            <p id="resultat" onclick="calcul()">Resulat:</p>
+            <!--mlam-->
+        </div>
+
+        <div class="sous_izy_rehetra">
+            <div class="haha" id="delta_sup0">
+                <!--mlam--------------------------------------------------------------------->
+                <div class="ttsolution">
+                    <label for="delta" class="contenue">delta: </label>
+                    <span id="delta1" class="contenue">2222</span>
+                </div>
+                <div class="ttsolution">
+                    <label for="x'" class="contenue">X'= </label>
+                    <span id="solution12" class="contenue">11111111</span>
+                </div>
+                <div class="ttsolution">
+                    <label for="delta1" id="solution1" class="contenue">X"= </label>
+                    <span id="solution13" class="contenue"></span>
+                </div>
+            </div>
+            <!--mlam--------------------------------------------------------------------------------------------->
+            <div class="haha" id="delta_egal0">
+                <div class="ttsolution">
+                    <label for="delta" class="contenue">delta=</label>
+                    <span id="delta0" class="contenue">0</span>
+                </div>
+                <div class="ttsolution">
+                    <label for="del" id="solution2" class="contenue">X'=X"= </label>
+                    <span id="sous_delta_egal0" class="contenue">2234</span>
+                </div>
+
+            </div>
+            <div class="haha" id="delta_inferieur0">
+                <div class="ttsolution">
+                    <label for="delta" class="contenue">delta: </label>
+                    <span id="delta" class="contenue">-5</span>
+
+                    <p id="pas_de_solution" class="contenue">Donc pas de solution </p>
+                    <!--haha-->
+                </div>
+            </div>
+        </div>
+
+        <img src="x.svg" alt="" id="refresh" onclick="refresh()">
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
