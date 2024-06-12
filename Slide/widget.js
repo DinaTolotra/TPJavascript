@@ -1,12 +1,12 @@
 $("#waitDelaySpinner").spinner({
-    min: 1000,
+    min: 0,
     max: 5000
 });
 
 
 $("#slideDelaySpinner").spinner({
     min: 300,
-    max: 1000
+    max: 5000
 });
 
 
@@ -32,7 +32,7 @@ $("#setupDialog").dialog({
                 let waitTemp = $("#waitDelaySpinner").spinner("value");
                 let slideTemp = $("#slideDelaySpinner").spinner("value");
         
-                if (waitTemp < 1000 || slideTemp < 300) {
+                if (waitTemp < 0 || slideTemp < 300) {
                     showAlert();
                     setTimeout(() => {
                         hideAlert();

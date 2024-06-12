@@ -129,5 +129,5 @@ function slide() {
             clearInterval(slideTimer);
             wait();
         }
-    } , slide/300);
+    } , slideDelay/300);
 }

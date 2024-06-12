@@ -19,6 +19,13 @@ function degree0() {
     $(deltaElem).addClass("invalid");
     $(x1Elem).addClass("invalid");
     $(x2Elem).addClass("invalid");
+
+    $(deltaElem).removeClass("unset");
+    $(x1Elem).removeClass("valid");
+    $(x2Elem).removeClass("valid");
+    $(deltaElem).removeClass("valid");
+    $(x1Elem).removeClass("unset");
+    $(x2Elem).removeClass("unset");
 }
 
 function degree1() {
@@ -28,10 +35,19 @@ function degree1() {
     
     x = (-c) / b;
 
+    $(deltaElem).html("N'éxiste pas")
     $(x1Elem).html(x.toFixed(3));
+    $(x2Elem).html("N'éxiste pas")
+    $(deltaElem).addClass("unset");    
     $(x1Elem).addClass("valid");
     $(x2Elem).addClass("unset");
-    $(deltaElem).addClass("valid");    
+
+    $(deltaElem).removeClass("invalid");
+    $(x1Elem).removeClass("invalid");
+    $(x2Elem).removeClass("invalid");
+    $(deltaElem).removeClass("valid");
+    $(x1Elem).removeClass("unset");
+    $(x2Elem).removeClass("valid");
 }
 
 function degree2() {
@@ -51,7 +67,6 @@ function degree2() {
         $(deltaElem).addClass("valid");
         $(x1Elem).addClass("valid");
         $(x2Elem).addClass("valid");
-
 
         $(deltaElem).removeClass("unset");
         $(x1Elem).removeClass("invalid");
