@@ -44,7 +44,7 @@
                             <a class="nav-link" href="../Equation/equation.html">Équation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../Slide/index.html">Publicitaire</a>
+                            <a class="nav-link" href="../Slide/slide.html">Publicitaire</a>
                         </li>
                     </ul>
                 </div>
@@ -53,7 +53,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="d-grid">
         <div id="bg">
             <div class="popup">
                 <div id="title">Input</div>
@@ -68,31 +68,42 @@
             </div>
         </div>
 
-        <div class="card" id="circuit_cont">
-            <canvas id="main"></canvas>
-            <div id="comp_cont"> 
-                <canvas class="comp" id="E"></canvas>
-                <canvas class="comp R" id="R1"></canvas>
-                <canvas class="comp R" id="R2"></canvas>
-                <canvas class="comp R" id="R3"></canvas>
-                <canvas class="comp R" id="R4"></canvas>
-            </div>
-            <div class="card-footer text-center">
-                Circuit
-            </div>
+        <div class="fs-3 fw-bold row">
+            Projet Javascript: Circuit éléctrique
         </div>
         
-        <div class="card" id="data_container">
-            <div class="card-body d-flex justify-content-around">
-                <table id="input_list"></table>
-                <div></div>
-                <table id="output_list"></table>
-                <button type="button" hidden>Calculer</button>
+        <div class="row">
+            <div class="col-6">
+                <div class="card" id="circuit_cont">
+                    <div class="card-header text-center">
+                        Circuit
+                    </div>
+                    <canvas id="main"></canvas>
+                    <div id="comp_cont"> 
+                        <canvas class="comp" id="E"></canvas>
+                        <canvas class="comp R" id="R1"></canvas>
+                        <canvas class="comp R" id="R2"></canvas>
+                        <canvas class="comp R" id="R3"></canvas>
+                        <canvas class="comp R" id="R4"></canvas>
+                    </div>
+                </div>
             </div>
-            <div class="card-footer text-center">
-                Entrée/Sortie
+            
+            <div class="col-6">
+                <div class="card" id="data_container">
+                    <div class="card-header text-center">
+                        Entrée/Sortie
+                    </div>
+                    <div class="card-body d-flex justify-content-around">
+                        <table id="input_list"></table>
+                        <div></div>
+                        <table id="output_list"></table>
+                        <button type="button" hidden>Calculer</button>
+                    </div>
+                </div>
             </div>
         </div>
+
     </main>
 
 </body>

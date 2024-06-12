@@ -130,26 +130,26 @@ function arrangeComponent() {
 
     const E = $("canvas#E");
     $(E).css("left", -11);
-    $(E).css("top", 95);
+    $(E).css("top", 136);
     $(E).css("rotate", "90deg");
 
     const R1 = $("canvas#R1");
     $(R1).css("left", 120);
-    $("canvas#R1").css("top", 8);
+    $("canvas#R1").css("top", 49);
 
     const R2 = "canvas#R2";
     $(R2).css("left", 242);
-    $(R2).css("top", 95);
+    $(R2).css("top", 136);
     $(R2).css("rotate", "90deg");
 
     const R3 = "canvas#R3";
     $(R3).css("left", 368);
-    $(R3).css("top", 95);
+    $(R3).css("top", 136);
     $(R3).css("rotate", "90deg");
 
     const R4 = "canvas#R4";
     $(R4).css("left", 120);
-    $(R4).css("top", 208);
+    $(R4).css("top", 249);
 }
 
 function generateDataList(container, list) {
