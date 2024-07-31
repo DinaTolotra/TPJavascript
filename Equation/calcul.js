@@ -74,25 +74,29 @@ function degree2() {
         $(deltaElem).removeClass("invalid");
         $(x1Elem).removeClass("unset");
         $(x2Elem).removeClass("unset");
+
+        $("#remark").html("Deux solution distinct");
     } else if (delta == 0) {
         x1 = (-b) / 2 * a;
         $(deltaElem).html(delta.toFixed(3));
         $(x1Elem).html(x1.toFixed(3));
-        $(x2Elem).html(x1.toFixed(3));
+        $(x2Elem).html("");
         $(deltaElem).addClass("unset");
         $(x1Elem).addClass("valid");
-        $(x2Elem).addClass("valid");
+        $(x2Elem).addClass("unset");
 
         $(deltaElem).removeClass("valid");
         $(x1Elem).removeClass("invalid");
-        $(x2Elem).removeClass("unset");
+        $(x2Elem).removeClass("invalid");
         $(deltaElem).removeClass("invalid");
         $(x1Elem).removeClass("unset");
-        $(x2Elem).removeClass("unset");
+        $(x2Elem).removeClass("valid");
+
+        $("#remark").html("Solution unique");
     } else if (delta < 0) {
         $(deltaElem).html(delta.toFixed(3));
-        $(x1Elem).html("Pas de solution");
-        $(x2Elem).html("Pas de solution");
+        $(x1Elem).html("");
+        $(x2Elem).html("");
         $(deltaElem).addClass("unset");
         $(x1Elem).addClass("invalid");
         $(x2Elem).addClass("invalid");
@@ -103,5 +107,7 @@ function degree2() {
         $(deltaElem).removeClass("invalid");
         $(x1Elem).removeClass("unset");
         $(x2Elem).removeClass("unset");
+
+        $("#remark").html("Pas de solution");
     }
 }
